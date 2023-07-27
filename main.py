@@ -14,7 +14,7 @@ st.set_page_config(
 styl = """
     <style>
         button.css-ch5dnh {
-            height: 8000px;
+            display: none;
         }
     </style>
 """
