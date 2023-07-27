@@ -5,6 +5,14 @@ import streamlit as st
 import plotly.graph_objects as go
 from scipy.optimize import curve_fit, minimize
 
+# Add custom CSS to hide the GitHub icon
+hide_github_icon = """
+#GithubIcon {
+  visibility: hidden;
+}
+"""
+st.markdown(hide_github_icon, unsafe_allow_html=True)
+
 for k, v in st.session_state.items():
     st.session_state[k] = v
 
