@@ -11,16 +11,15 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded")
 
-# Add custom CSS to hide the GitHub icon
-hide_github_icon = """
-
-.css-1jc7ptx, .e1ewe7hr3, .viewerBadge_container__1QSob, .styles_viewerBadge__1yB5_, .viewerBadge_link__1S137, .viewerBadge_text__1JaDK{ display: none; } #MainMenu{ visibility: hidden; } footer { visibility: hidden; } header { visibility: hidden; }
+styl = f"""
+    <style>
+        #root > div:nth-child(1) > div.withScreencast > div > div > header > div.css-zq5wmm.ezrtsby0 > div > button {height: 8000px;}
+    </style>
 """
-st.markdown(hide_github_icon, unsafe_allow_html=True)
+st.markdown(styl, unsafe_allow_html=True)
 
 for k, v in st.session_state.items():
     st.session_state[k] = v
-
 
 
 tab1, tab2, tab3 = st.tabs(["Meta", "TTD", "Overall"])
