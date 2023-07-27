@@ -13,7 +13,7 @@ st.set_page_config(
 
 styl = f"""
     <style>
-        #root > div:nth-child(1) > div.withScreencast > div > div > header > div.css-zq5wmm.ezrtsby0 > div > button {height: 8000px;}
+        button.css-ch5dnh {height: 8000px;}
     </style>
 """
 st.markdown(styl, unsafe_allow_html=True)
