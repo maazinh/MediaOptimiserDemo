@@ -11,9 +11,11 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded")
 
-styl = f"""
+styl = """
     <style>
-        button.css-ch5dnh {height: 8000px;}
+        button.css-ch5dnh {
+            height: 8000px;
+        }
     </style>
 """
 st.markdown(styl, unsafe_allow_html=True)
