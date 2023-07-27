@@ -34,7 +34,7 @@ with tab1:
     container = st.container()
     col1, col2, col3, col4, col5, col6, col7, col8, col9 = container.columns(9)
     with col1:
-        budget = st.number_input("Set budget", min_value=200, value=1000, key='metabudget', step=500)
+        budget = st.number_input("Set budget", min_value=200, value=20000, key='metabudget')
 
 
     def OptimiseBudgetsHill(budget, df_dict, df):
@@ -253,9 +253,9 @@ with tab1:
 with tab2:
     dfUAE = pd.read_csv("Data/UAE-TTD.csv")
     dfUAE["Market"] = "UAE"
-    dfDE = pd.read_csv("DE-TTD.csv")
+    dfDE = pd.read_csv("Data/DE-TTD.csv")
     dfDE["Market"] = "DE"
-    dfUK = pd.read_csv("UK-TTD.csv")
+    dfUK = pd.read_csv("Data/UK-TTD.csv")
     dfUK["Market"] = "UK"
 
     date_format = "%b %d, %Y"
@@ -268,7 +268,7 @@ with tab2:
     container = st.container()
     col1, col2, col3, col4, col5, col6, col7, col8, col9 = container.columns(9)
     with col1:
-        budget = st.number_input("Set budget", min_value=200, value=1000, key='ttdbudget', step=500)
+        budget = st.number_input("Set budget", min_value=200, value=20000, key='ttdbudget')
 
 
     def OptimiseBudgetsHill(budget, df_dict, df):
@@ -512,7 +512,7 @@ with tab3:
     container = st.container()
     col1, col2, col3, col4, col5, col6, col7, col8, col9 = container.columns(9)
     with col1:
-        budget = st.number_input("Set budget", min_value=200, value=1000, key='overallbudget', step=500)
+        budget = st.number_input("Set budget", min_value=200, value=20000, key='overallbudget')
 
 
     def OptimiseBudgetsHill(budget, df_dict, df):
