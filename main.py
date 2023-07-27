@@ -5,22 +5,30 @@ import streamlit as st
 import plotly.graph_objects as go
 from scipy.optimize import curve_fit, minimize
 
-# Add custom CSS to hide the GitHub icon
-hide_github_icon = """
-#GithubIcon {
-  visibility: hidden;
-}
-"""
-st.markdown(hide_github_icon, unsafe_allow_html=True)
-
-for k, v in st.session_state.items():
-    st.session_state[k] = v
-
 # make page widescreen
 st.set_page_config(
     page_title="Media Optimiser",
     layout="wide",
     initial_sidebar_state="expanded")
+
+# Add custom CSS to hide the GitHub icon
+st.markdown(
+    """
+    <style>
+    .css-1jc7ptx, .e1ewe7hr3, .viewerBadge_container__1QSob,
+    .styles_viewerBadge__1yB5_, .viewerBadge_link__1S137,
+    .viewerBadge_text__1JaDK {
+        display: none;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+for k, v in st.session_state.items():
+    st.session_state[k] = v
+
+
 
 tab1, tab2, tab3 = st.tabs(["Meta", "TTD", "Overall"])
 
