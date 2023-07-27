@@ -21,7 +21,7 @@ with tab1:
     dfUAE["Market"] = "UAE"
     dfDE = pd.read_csv("Data/DE-Meta.csv")
     dfDE["Market"] = "DE"
-    dfUK = pd.read_csv("C:/Users/maahaque/PycharmProjects/MediaOptimiserDemo/Data/UK-Meta.csv")
+    dfUK = pd.read_csv("Data/UK-Meta.csv")
     dfUK["Market"] = "UK"
 
     date_format = "%b %d, %Y"
