@@ -34,7 +34,7 @@ with tab1:
     container = st.container()
     col1, col2, col3, col4, col5, col6, col7, col8, col9 = container.columns(9)
     with col1:
-        budget = st.number_input("Set budget", min_value=200, value=20000, key='metabudget', step=10000)
+        budget = st.number_input("Set budget", min_value=200, value=20000, key='metabudget', step=5000)
 
 
     def OptimiseBudgetsHill(budget, df_dict, df):
@@ -268,7 +268,7 @@ with tab2:
     container = st.container()
     col1, col2, col3, col4, col5, col6, col7, col8, col9 = container.columns(9)
     with col1:
-        budget = st.number_input("Set budget", min_value=200, value=20000, key='ttdbudget',step=10000)
+        budget = st.number_input("Set budget", min_value=200, value=20000, key='ttdbudget', step=5000)
 
 
     def OptimiseBudgetsHill(budget, df_dict, df):
@@ -512,7 +512,7 @@ with tab3:
     container = st.container()
     col1, col2, col3, col4, col5, col6, col7, col8, col9 = container.columns(9)
     with col1:
-        budget = st.number_input("Set budget", min_value=200, value=20000, key='overallbudget',step=10000)
+        budget = st.number_input("Set budget", min_value=200, value=20000, key='overallbudget', step=5000)
 
 
     def OptimiseBudgetsHill(budget, df_dict, df):
