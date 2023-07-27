@@ -248,7 +248,7 @@ with tab1:
 
     container.write("")
     container.dataframe(merged_df.style.format(subset=["Optimal Costs ($)", "Expected Revenue ($)"],
-                                               formatter="{:,.0f}").format(subset=["ROI"], formatter="{:.1f}").format(subset=["Marginal ROI"], formatter="{:.2f}"),
+                                               formatter="{:,.0f}").format(subset=["ROI", "Marginal ROI"], formatter="{:.2f}"),
                         use_container_width=True, height=(len(df_results) + 1) * 35 + 3)
 with tab2:
     dfUAE = pd.read_csv("Data/UAE-TTD.csv")
@@ -482,7 +482,7 @@ with tab2:
 
     container.write("")
     container.dataframe(merged_df.style.format(subset=["Optimal Costs ($)", "Expected Revenue ($)"],
-                                               formatter="{:,.0f}").format(subset=["ROI"], formatter="{:.1f}").format(subset=["Marginal ROI"], formatter="{:.2f}"),
+                                               formatter="{:,.0f}").format(subset=["ROI", "Marginal ROI"], formatter="{:.2f}"),
                         use_container_width=True, height=(len(df_results) + 1) * 35 + 3)
 
 with tab3:
@@ -725,5 +725,5 @@ with tab3:
 
     container.write("")
     container.dataframe(merged_df.style.format(subset=["Optimal Costs ($)", "Expected Revenue ($)"],
-                                               formatter="{:,.0f}").format(subset=["ROI"], formatter="{:.1f}").format(subset=["Marginal ROI"], formatter="{:.2f}"),
+                                               formatter="{:,.0f}").format(subset=["ROI", "Marginal ROI"], formatter="{:.2f}"),
                         use_container_width=True, height=(len(df_results) + 1) * 35 + 3)
